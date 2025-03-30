@@ -14,7 +14,6 @@ Ensure you have Python and OpenCV installed.You can install the dependencies usi
 ```
 pip install opencv-python numpy
 ```
-<br>
 
 ## References
 You can check these out for easier understanding.
@@ -22,5 +21,5 @@ You can check these out for easier understanding.
 - **OpenCV Documentation** - https://docs.opencv.org/
 - **Deep Learning Face Detector(SSD Model) in OpenCV** - https://github.com/opencv/opencv/blob/master/samples/dnn/face_detector/opencv_face_detector.pbtxt
 - **Caffe Model(Res10 model)** - https://github.com/opencv/opencv/blob/master/samples/dnn/face_detector/res10_300x300_ssd_iter_140000.caffemodel
-<br>
-Developed by - @Arijit2175
+
+**Developed by** - @Arijit2175
