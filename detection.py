@@ -10,3 +10,5 @@ while True:
     
     if not ret:
         break
+
+    gray = cv2.cvtColor(frame, cv2.ColorBGR2GRAY)
