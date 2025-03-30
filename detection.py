@@ -3,6 +3,8 @@ import cv2
 prototxt_path = 'deploy.prototxt.txt'
 model_path = 'res10_300x300_ssd_iter_140000._fp16.caffemodel'
 
+net = cv2.dnn.readNetFromCaffe(prototxt_path, model_path)
+
 cap = cv2.VideoCapture(0)
 
 face_casscade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
