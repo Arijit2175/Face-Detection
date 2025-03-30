@@ -11,7 +11,7 @@ while True:
     if not ret:
         break
 
-    gray = cv2.cvtColor(frame, cv2.ColorBGR2GRAY)
+    gray = cv2.cvtColor(frame, cv2.Color_BGR2GRAY)
 
     faces = face_casscade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=5, minSize=(30, 30))
 
