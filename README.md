@@ -15,7 +15,8 @@ Ensure you have Python and OpenCV installed.You can install the dependencies usi
 pip install opencv-python numpy
 ```
 <br>
-##References
+
+## References
 You can check these out for easier understanding.
 
 - **OpenCV Documentation** - https://docs.opencv.org/
