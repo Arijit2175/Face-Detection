@@ -17,6 +17,8 @@ while True:
         break
 
     h, w = frame.shape[:2]
+
+    blob = cv2.dnn.blobFromImage(frame, 1.0, (300, 300), (104.0, 177.0, 123.0))
     
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
