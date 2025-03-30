@@ -1,6 +1,7 @@
 import cv2
 
 prototxt_path = 'deploy.prototxt.txt'
+model_path = 'res10_300x300_ssd_iter_140000._fp16.caffemodel'
 
 cap = cv2.VideoCapture(0)
 
