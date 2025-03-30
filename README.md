@@ -12,7 +12,7 @@ This project implements **real-time face detection** using **OpenCV’s Deep Neu
 ## Installation  
 Ensure you have Python and OpenCV installed.You can install the dependencies using the following command:  
 ```
-bash pip install opencv-python numpy
+pip install opencv-python numpy
 ```
 <br>
 Done by - @Arijit2175
