@@ -5,6 +5,9 @@ model_path = 'res10_300x300_ssd_iter_140000_fp16.caffemodel'
 
 net = cv2.dnn.readNetFromCaffe(prototxt_path, model_path)
 
+net.setPreferableBackend(cv2.dnn.DNN_BACKEND_CUDA)
+net.setPreferableTarget(cv2.dnn.DNN_TARGET_CUDA)
+
 cap = cv2.VideoCapture(0)
 
 face_casscade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
