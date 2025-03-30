@@ -1,6 +1,6 @@
 import cv2
 
-prototxt_path = 'deploy.prototxt.txt'
+prototxt_path = 'deploy.prototxt'
 model_path = 'res10_300x300_ssd_iter_140000._fp16.caffemodel'
 
 net = cv2.dnn.readNetFromCaffe(prototxt_path, model_path)
