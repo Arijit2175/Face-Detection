@@ -21,14 +21,14 @@ while True:
 
     h, w = frame.shape[:2]
 
-    blob = cv2.dnn.blobFromImage(frame, 1.0, (300, 300), (104.0, 177.0, 123.0))
+    blob = cv2.dnn.blobFromImage(frame, 1.0, (300, 300), (104.0, 177.0, 123.0), swapRB=False, crop=False)
 
     net.setInput(blob)
     detections = net.forward()
 
     for i in range(detections.shape[2]):
         confidence = detections[0, 0, i, 2]
-        if confidence>0.5:
+        if confidence>0.7:
             box = detections[0, 0, i, 3:7] * [w, h, w, h]
             (x, y, x_max, y_max) = box.astype("int")
             cv2.rectangle(frame, (x, y), (x_max, y_max), (255, 0, 0), 2)
